@@ -4,7 +4,7 @@
     xmlns="sap.m"  xmlns:micro="sap.suite.ui.microchart">
     <Page id="page" title="{i18n>title}">
         <content>
-        <VBox>
+        <VBox width="100%">
 
 <HBox> 
 <!-- <Text text=" Section: 1 Main header - critical systems |"></Text> -->
@@ -45,12 +45,12 @@
 						selectedKey="Q1"
                         showSecondaryValues="true"
                         width="100%"
-                        wrapItemsText="true"
+                        wrapItemsText="false"
 						>
-                <core:Item key="Q1" text=" Quater1 - Q1" />
-                    <core:Item key="Q2" text="Quarter2 - Q2" />
-                    <core:Item key="Q3" text="Quarter3 - Q3" />
-                    <core:Item key="Q4" text="Quarter4 - Q4" />
+                <core:Item key="Q1" text=" Quater 1" />
+                    <core:Item key="Q2" text="Quarter 2" />
+                    <core:Item key="Q3" text="Quarter 3" />
+                    <core:Item key="Q4" text="Quarter 4" />
 				</Select>
 
 </VBox>
@@ -330,25 +330,368 @@ maxContainerCols="1" title="PLM" editable="false"	layout="ResponsiveLayout">
 
 
 </HBox>
-<HBox > <Text text="tile 2 |"></Text> </HBox>
-<HBox > <Text text="tile 3 |"></Text> </HBox>
-<HBox > <Text text="tile 4 |"></Text> </HBox>
+<HBox > 
+<!-- <Text text="tile 2 |"></Text>  -->
+
+<f:SimpleForm id="tile1row2" class="equalColumns1"
+maxContainerCols="1" title="Europe" editable="false"	layout="ResponsiveLayout">
+     <VBox id="tile1row2container">
+
+																		<HBox>
+																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
+																				text="Queue Depth"></Text>
+																			<NumericContent id="crmqd"
+																				class="sapUiSmallMarginBegin sapUiTinyMarginTop"
+																				value="{CRM>/d/WeightMeasure}"
+																				valueColor="Critical"							indicator="None" withMargin="false" state="Loaded"
+																				press="onOpenQueueDialog" /> -->
+																		</HBox>
+
+																		<!-- <List id= "crmlist" class="sapUiTinyMarginBottom" >
+
+																			<StandardListItem id="crmsys" title="System Errors" 	type="Active" 
+					
+						                                                        press="onOpenSystemDialog"
+																				info="{CRM>/d/DimensionHeight}"
+																				infoState="Error"  />
+
+																			<StandardListItem id="crmapp" title="App Errors" 	type="Active" 
+					
+						                                                        press="onOpenAppDialog"
+																				info="{CRM>/d/DimensionWidth}"
+																				infoState="Error" />
+
+																			<StandardListItem title="No of Threads"
+																				info="{CRM>/d/DimensionDepth}"
+																				infoState="None" />
+																		
+																		</List> -->
+
+																		<HBox>
+																			<!-- <Label class="sapUiTinyMarginBegin" text="Updated at:"></Label>
+																			<Text
+																				text="{
+								                                                    path: 'CRM>/d/LastModified',
+							                                                    formatter: '.Formatter.formatJSONDate'}"></Text> -->
+                                                                        </HBox>
+																	</VBox>                                                               
+                                                                    
+</f:SimpleForm>
+
+
+</HBox>
+<HBox > 
+<!-- <Text text="tile 3 |"></Text>  -->
+
+
+<f:SimpleForm id="tile2row2" class="equalColumns1"
+maxContainerCols="1" title="APAC" editable="false"	layout="ResponsiveLayout">
+     <VBox id="tile2row2container">
+
+																		<HBox>
+																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
+																				text="Queue Depth"></Text>
+																			<NumericContent id="crmqd"
+																				class="sapUiSmallMarginBegin sapUiTinyMarginTop"
+																				value="{CRM>/d/WeightMeasure}"
+																				valueColor="Critical"							indicator="None" withMargin="false" state="Loaded"
+																				press="onOpenQueueDialog" /> -->
+																		</HBox>
+
+																		<!-- <List id= "crmlist" class="sapUiTinyMarginBottom" >
+
+																			<StandardListItem id="crmsys" title="System Errors" 	type="Active" 
+					
+						                                                        press="onOpenSystemDialog"
+																				info="{CRM>/d/DimensionHeight}"
+																				infoState="Error"  />
+
+																			<StandardListItem id="crmapp" title="App Errors" 	type="Active" 
+					
+						                                                        press="onOpenAppDialog"
+																				info="{CRM>/d/DimensionWidth}"
+																				infoState="Error" />
+
+																			<StandardListItem title="No of Threads"
+																				info="{CRM>/d/DimensionDepth}"
+																				infoState="None" />
+																		
+																		</List> -->
+
+																		<HBox>
+																			<!-- <Label class="sapUiTinyMarginBegin" text="Updated at:"></Label>
+																			<Text
+																				text="{
+								                                                    path: 'CRM>/d/LastModified',
+							                                                    formatter: '.Formatter.formatJSONDate'}"></Text> -->
+                                                                        </HBox>
+																	</VBox>                                                               
+                                                                    
+</f:SimpleForm>
+
+</HBox>
+<HBox > 
+
+<!-- <Text text="tile 4 |"></Text> -->
+
+<f:SimpleForm id="tile3row2" class="equalColumns1"
+maxContainerCols="1" title="NA region" editable="false"	layout="ResponsiveLayout">
+     <VBox id="tile3row2container">
+
+																		<HBox>
+																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
+																				text="Queue Depth"></Text>
+																			<NumericContent id="crmqd"
+																				class="sapUiSmallMarginBegin sapUiTinyMarginTop"
+																				value="{CRM>/d/WeightMeasure}"
+																				valueColor="Critical"							indicator="None" withMargin="false" state="Loaded"
+																				press="onOpenQueueDialog" /> -->
+																		</HBox>
+
+																		<!-- <List id= "crmlist" class="sapUiTinyMarginBottom" >
+
+																			<StandardListItem id="crmsys" title="System Errors" 	type="Active" 
+					
+						                                                        press="onOpenSystemDialog"
+																				info="{CRM>/d/DimensionHeight}"
+																				infoState="Error"  />
+
+																			<StandardListItem id="crmapp" title="App Errors" 	type="Active" 
+					
+						                                                        press="onOpenAppDialog"
+																				info="{CRM>/d/DimensionWidth}"
+																				infoState="Error" />
+
+																			<StandardListItem title="No of Threads"
+																				info="{CRM>/d/DimensionDepth}"
+																				infoState="None" />
+																		
+																		</List> -->
+
+																		<HBox>
+																			<!-- <Label class="sapUiTinyMarginBegin" text="Updated at:"></Label>
+																			<Text
+																				text="{
+								                                                    path: 'CRM>/d/LastModified',
+							                                                    formatter: '.Formatter.formatJSONDate'}"></Text> -->
+                                                                        </HBox>
+																	</VBox>                                                               
+                                                                    
+</f:SimpleForm>
+
+ </HBox>
 </HBox>
 
 <HBox>
 <!-- <Text text="Tile  Row 3 Section"></Text> -->
+<HBox > 
+
+
+<!-- <Text text="tile 1 |"></Text>  -->
+
+<f:SimpleForm id="tile1row3" class="equalColumns1"
+maxContainerCols="1" title="BW" editable="false"	layout="ResponsiveLayout">
+     <VBox id="tile1row3container">
+
+																		<HBox>
+																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
+																				text="Queue Depth"></Text>
+																			<NumericContent id="crmqd"
+																				class="sapUiSmallMarginBegin sapUiTinyMarginTop"
+																				value="{CRM>/d/WeightMeasure}"
+																				valueColor="Critical"							indicator="None" withMargin="false" state="Loaded"
+																				press="onOpenQueueDialog" /> -->
+																		</HBox>
+
+																		<!-- <List id= "crmlist" class="sapUiTinyMarginBottom" >
+
+																			<StandardListItem id="crmsys" title="System Errors" 	type="Active" 
+					
+						                                                        press="onOpenSystemDialog"
+																				info="{CRM>/d/DimensionHeight}"
+																				infoState="Error"  />
+
+																			<StandardListItem id="crmapp" title="App Errors" 	type="Active" 
+					
+						                                                        press="onOpenAppDialog"
+																				info="{CRM>/d/DimensionWidth}"
+																				infoState="Error" />
+
+																			<StandardListItem title="No of Threads"
+																				info="{CRM>/d/DimensionDepth}"
+																				infoState="None" />
+																		
+																		</List> -->
+
+																		<HBox>
+																			<!-- <Label class="sapUiTinyMarginBegin" text="Updated at:"></Label>
+																			<Text
+																				text="{
+								                                                    path: 'CRM>/d/LastModified',
+							                                                    formatter: '.Formatter.formatJSONDate'}"></Text> -->
+                                                                        </HBox>
+																	</VBox>                                                               
+                                                                    
+</f:SimpleForm>
+
+</HBox>
+<HBox > 
+
+<!-- <Text text="tile 2 |"></Text> -->
+
+<f:SimpleForm id="tile2row3" class="equalColumns1"
+maxContainerCols="1" title="LA region" editable="false"	layout="ResponsiveLayout">
+     <VBox id="tile2row3container">
+
+																		<HBox>
+																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
+																				text="Queue Depth"></Text>
+																			<NumericContent id="crmqd"
+																				class="sapUiSmallMarginBegin sapUiTinyMarginTop"
+																				value="{CRM>/d/WeightMeasure}"
+																				valueColor="Critical"							indicator="None" withMargin="false" state="Loaded"
+																				press="onOpenQueueDialog" /> -->
+																		</HBox>
+
+																		<!-- <List id= "crmlist" class="sapUiTinyMarginBottom" >
+
+																			<StandardListItem id="crmsys" title="System Errors" 	type="Active" 
+					
+						                                                        press="onOpenSystemDialog"
+																				info="{CRM>/d/DimensionHeight}"
+																				infoState="Error"  />
+
+																			<StandardListItem id="crmapp" title="App Errors" 	type="Active" 
+					
+						                                                        press="onOpenAppDialog"
+																				info="{CRM>/d/DimensionWidth}"
+																				infoState="Error" />
+
+																			<StandardListItem title="No of Threads"
+																				info="{CRM>/d/DimensionDepth}"
+																				infoState="None" />
+																		
+																		</List> -->
+
+																		<HBox>
+																			<!-- <Label class="sapUiTinyMarginBegin" text="Updated at:"></Label>
+																			<Text
+																				text="{
+								                                                    path: 'CRM>/d/LastModified',
+							                                                    formatter: '.Formatter.formatJSONDate'}"></Text> -->
+                                                                        </HBox>
+																	</VBox>                                                               
+                                                                    
+</f:SimpleForm>
+
+ </HBox>
+<HBox >
+
+ <!-- <Text text="tile 3 |"></Text> -->
+
+<f:SimpleForm id="tile3row3" class="equalColumns1"
+maxContainerCols="1" title="Japan" editable="false"	layout="ResponsiveLayout">
+     <VBox id="tile3row3container">
+
+																		<HBox>
+																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
+																				text="Queue Depth"></Text>
+																			<NumericContent id="crmqd"
+																				class="sapUiSmallMarginBegin sapUiTinyMarginTop"
+																				value="{CRM>/d/WeightMeasure}"
+																				valueColor="Critical"							indicator="None" withMargin="false" state="Loaded"
+																				press="onOpenQueueDialog" /> -->
+																		</HBox>
+
+																		<!-- <List id= "crmlist" class="sapUiTinyMarginBottom" >
+
+																			<StandardListItem id="crmsys" title="System Errors" 	type="Active" 
+					
+						                                                        press="onOpenSystemDialog"
+																				info="{CRM>/d/DimensionHeight}"
+																				infoState="Error"  />
+
+																			<StandardListItem id="crmapp" title="App Errors" 	type="Active" 
+					
+						                                                        press="onOpenAppDialog"
+																				info="{CRM>/d/DimensionWidth}"
+																				infoState="Error" />
+
+																			<StandardListItem title="No of Threads"
+																				info="{CRM>/d/DimensionDepth}"
+																				infoState="None" />
+																		
+																		</List> -->
+
+																		<HBox>
+																			<!-- <Label class="sapUiTinyMarginBegin" text="Updated at:"></Label>
+																			<Text
+																				text="{
+								                                                    path: 'CRM>/d/LastModified',
+							                                                    formatter: '.Formatter.formatJSONDate'}"></Text> -->
+                                                                        </HBox>
+																	</VBox>                                                               
+                                                                    
+</f:SimpleForm>
+
+ </HBox>
+<HBox >
+
+ <!-- <Text text="tile 4 |"></Text> -->
+
+<f:SimpleForm id="tile4row3" class="equalColumns1"
+maxContainerCols="1" title="Concur" editable="false"	layout="ResponsiveLayout">
+     <VBox id="tile4row3container">
+
+																		<HBox>
+																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
+																				text="Queue Depth"></Text>
+																			<NumericContent id="crmqd"
+																				class="sapUiSmallMarginBegin sapUiTinyMarginTop"
+																				value="{CRM>/d/WeightMeasure}"
+																				valueColor="Critical"							indicator="None" withMargin="false" state="Loaded"
+																				press="onOpenQueueDialog" /> -->
+																		</HBox>
+
+																		<!-- <List id= "crmlist" class="sapUiTinyMarginBottom" >
+
+																			<StandardListItem id="crmsys" title="System Errors" 	type="Active" 
+					
+						                                                        press="onOpenSystemDialog"
+																				info="{CRM>/d/DimensionHeight}"
+																				infoState="Error"  />
+
+																			<StandardListItem id="crmapp" title="App Errors" 	type="Active" 
+					
+						                                                        press="onOpenAppDialog"
+																				info="{CRM>/d/DimensionWidth}"
+																				infoState="Error" />
+
+																			<StandardListItem title="No of Threads"
+																				info="{CRM>/d/DimensionDepth}"
+																				infoState="None" />
+																		
+																		</List> -->
+
+																		<HBox>
+																			<!-- <Label class="sapUiTinyMarginBegin" text="Updated at:"></Label>
+																			<Text
+																				text="{
+								                                                    path: 'CRM>/d/LastModified',
+							                                                    formatter: '.Formatter.formatJSONDate'}"></Text> -->
+                                                                        </HBox>
+																	</VBox>                                                               
+                                                                    
+</f:SimpleForm>
+ </HBox>
+</HBox>
+<!-- <HBox>
+<Text text="Tile  Row 4 Section"></Text> 
 <HBox > <Text text="tile 1 |"></Text> </HBox>
 <HBox > <Text text="tile 2 |"></Text> </HBox>
 <HBox > <Text text="tile 3 |"></Text> </HBox>
 <HBox > <Text text="tile 4 |"></Text> </HBox>
-</HBox>
-<HBox>
-<!-- <Text text="Tile  Row 4 Section"></Text> -->
-<HBox > <Text text="tile 1 |"></Text> </HBox>
-<HBox > <Text text="tile 2 |"></Text> </HBox>
-<HBox > <Text text="tile 3 |"></Text> </HBox>
-<HBox > <Text text="tile 4 |"></Text> </HBox>
-</HBox>
+</HBox> -->
 </VBox>
 
 			</IconTabFilter>
