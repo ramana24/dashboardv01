@@ -2,17 +2,24 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:core="sap.ui.core" 	xmlns:l="sap.ui.layout"
 	xmlns:f="sap.ui.layout.form"
     xmlns="sap.m"  xmlns:micro="sap.suite.ui.microchart">
-    <Page id="page" title="{i18n>title}">
+    <Page id="page" title="{}{i18n>title}" showHeader="true">
+		<headerContent>
+			<Image class="sapUiGlobalLogo sapUiSmallMarginEnd" height="5rem" width="5rem" src="https://1000logos.net/wp-content/uploads/2021/09/Reliance-Industries-Limited-Logo-768x483.png" mode="Image"/>
+
+		</headerContent>
+
         <content>
         <VBox width="100%">
 
 <HBox> 
 <!-- <Text text=" Section: 1 Main header - critical systems |"></Text> -->
+<!-- <core:Icon class="sapUiTinyMarginBegin size5 rightPosition"  src="sap-icon://sap-ui5"></core:Icon> -->
 
-<VBox> <Text text="logo "></Text>
+
+<VBox> 
 <Image class="sapUiGlobalLogo sapUiSmallMarginEnd" height="5rem" width="5rem" src="https://1000logos.net/wp-content/uploads/2021/09/Reliance-Industries-Limited-Logo-768x483.png" mode="Image"/>
 </VBox>
-<VBox> <Text text="Critical systems "></Text>
+<VBox> 
 <FlexBox height="70px" width="170px" renderType="Bare">
 							<micro:ColumnMicroChart showLabel="true" size="Responsive">
 								<micro:columns>
@@ -25,7 +32,7 @@
 
 
 </VBox>
-<VBox class="sapUiLargeMarginBeginEnd"> <Text text="Under maintainence "></Text> 
+<VBox class="sapUiLargeMarginBeginEnd"> 
 <FlexBox height="70px" width="170px" renderType="Bare">
 							<micro:StackedBarMicroChart size="Responsive"  press="press" precision="0">
 								<micro:bars>
@@ -37,14 +44,14 @@
 							</micro:StackedBarMicroChart>
 						</FlexBox>
 </VBox>
-<VBox> <Text text="Archival Data "></Text>
+
 <Select
 						enabled="true"
 						editable="true"
 						forceSelection="false"
 						selectedKey="Q1"
                         showSecondaryValues="true"
-                        width="100%"
+                        width="auto"
                         wrapItemsText="false"
 						liveChange="onQuarterChange"
 						>
@@ -54,7 +61,9 @@
                     <core:Item key="Q4" text="Quarter 4" />
 				</Select>
 
-</VBox>
+<HBox>
+
+</HBox>
 </HBox>
 
 

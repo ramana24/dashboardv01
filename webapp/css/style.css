@@ -1,5 +1,7 @@
 /* Enter your custom styles here */
-
+.rightPosition {
+    float: right;
+}
 .equalColumns1 {
 	background-color: #EAC435;
     border: 2px solid white;
