@@ -1,1 +1,32 @@
 /* Enter your custom styles here */
+
+.equalColumns1 {
+	background-color: #EAC435;
+    border: 2px solid white;
+  border-radius: 5px;
+	
+}  
+ .equalColumns2 {
+	background-color: #345995;
+    border: 2px solid white;
+    border-radius: 5px;
+	
+} 
+ .equalColumns3 {
+	background-color: #03CEA4;
+    border: 2px solid white;
+    border-radius: 5px;
+	
+} 
+ .equalColumns4 {
+	background-color: #FB4D3D;
+    border: 2px solid white;
+    border-radius: 5px;
+	
+} 
+ .equalColumns5 {
+	background-color: #CA1551;
+    border: 2px solid white;
+    border-radius: 5px;
+	
+} 

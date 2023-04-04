@@ -82,6 +82,46 @@ maxContainerCols="1" title="CRM" editable="false"	layout="ResponsiveLayout">
      <VBox id="crmcontainer">
 
 																		<HBox>
+
+																		<Label class="sapUiTinyMarginEnd sapUiSmallMarginTop sapUiTinyMarginTop" text="{i18n>lblQueueDepth}"></Label>
+																		
+																		<!-- <Text text="100"></Text> --> 
+																		<!-- Scale - upto 50 L ; >50 & <100 - M; > 100 H 
+																		 Value - Numeric state will be based on threshold ; Green = 0 ; <100 Orange; > 100 Red 
+																		 indicator > if previous is < current ; up arrow; if previous > current value down row;
+																		 -->
+																		<NumericContent scale="L" value="196" valueColor="Error" indicator="Up" withMargin="false" />
+																		</HBox>
+<HBox>
+<List  id= "crmlist" class="sapUiTinyMarginBottom" >
+<items>
+	<StandardListItem id="crmsys" title="System Errors" 	type="Active" 
+			icon="sap-icon://message-error"		
+		press="onOpenSystemDialog"
+ 		info="30"
+		infoState="Error"  />
+		<StandardListItem id="crmapp" title="App Errors" 	type="Active" 
+			icon="sap-icon://desktop-mobile"		
+		press="onOpenAppDialog"
+ 		info="20"
+		infoState="Error"  />
+		<StandardListItem id="crmtd" title="Thread Depth" 	type="Active" 
+			icon="sap-icon://synchronize"		
+		press="onOpenThreadDialog"
+ 		info="10"
+		infoState="Error"  />
+</items>
+</List>
+
+</HBox>
+
+
+																				<HBox>
+																		<Label class="sapUiTinyMarginEnd" text="{i18n>lblLastUpdate}"></Label>
+																		
+																		<Text text="04/04/2023 10 AM"></Text>
+																				</HBox>
+																<HBox>
 																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
 																				text="Queue Depth"></Text>
 																			<NumericContent id="crmqd"
@@ -89,7 +129,7 @@ maxContainerCols="1" title="CRM" editable="false"	layout="ResponsiveLayout">
 																				value="{CRM>/d/WeightMeasure}"
 																				valueColor="Critical"							indicator="None" withMargin="false" state="Loaded"
 																				press="onOpenQueueDialog" /> -->
-																		</HBox>
+																</HBox>
 
 																		<!-- <List id= "crmlist" class="sapUiTinyMarginBottom" >
 
@@ -127,10 +167,49 @@ maxContainerCols="1" title="CRM" editable="false"	layout="ResponsiveLayout">
 <HBox > 
 <!-- <Text text="tile 2 |"></Text>  -->
 
-<f:SimpleForm id="ecctile" class="equalColumns1"
+<f:SimpleForm id="ecctile" class="equalColumns2"
 maxContainerCols="1" title="ECC" editable="false"	layout="ResponsiveLayout">
      <VBox id="ecccontainer">
+<HBox>
 
+																		<Label class="sapUiTinyMarginEnd sapUiSmallMarginTop sapUiTinyMarginTop" text="{i18n>lblQueueDepth}"></Label>
+																		
+																		<!-- <Text text="100"></Text> --> 
+																		<!-- Scale - upto 50 L ; >50 & <100 - M; > 100 H 
+																		 Value - Numeric state will be based on threshold ; Green = 0 ; <100 Orange; > 100 Red 
+																		 indicator > if previous is < current ; up arrow; if previous > current value down row;
+																		 -->
+																		<NumericContent scale="L" value="196" valueColor="Error" indicator="Up" withMargin="false" />
+																		</HBox>
+<HBox>
+<List id= "row1tile2list" class="sapUiTinyMarginBottom" >
+<items>
+	<StandardListItem id="row1tile2sys" title="System Errors" 	type="Active" 
+			icon="sap-icon://message-error"		
+		press="onOpenSystemDialog"
+ 		info="30"
+		infoState="Error"  />
+		<StandardListItem id="row1tile2app" title="App Errors" 	type="Active" 
+			icon="sap-icon://desktop-mobile"		
+		press="onOpenAppDialog"
+ 		info="20"
+		infoState="Error"  />
+		<StandardListItem id="row1tile2td" title="Thread Depth" 	type="Active" 
+			icon="sap-icon://synchronize"		
+		press="onOpenThreadDialog"
+ 		info="10"
+		infoState="Error"  />
+</items>
+</List>
+
+</HBox>
+
+
+																				<HBox>
+																		<Label class="sapUiTinyMarginEnd" text="{i18n>lblLastUpdate}"></Label>
+																		
+																		<Text text="04/04/2023 10 AM"></Text>
+																				</HBox>
 																		<HBox>
 																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
 																				text="Queue Depth"></Text>
@@ -176,10 +255,49 @@ maxContainerCols="1" title="ECC" editable="false"	layout="ResponsiveLayout">
 
 <!-- <Text text="tile 3 |"></Text> -->
 
-<f:SimpleForm id="SFtile" class="equalColumns1"
+<f:SimpleForm id="SFtile" class="equalColumns3"
 maxContainerCols="1" title="SF" editable="false"	layout="ResponsiveLayout">
      <VBox id="SFcontainer">
+<HBox>
 
+																		<Label class="sapUiTinyMarginEnd sapUiSmallMarginTop sapUiTinyMarginTop" text="{i18n>lblQueueDepth}"></Label>
+																		
+																		<!-- <Text text="100"></Text> --> 
+																		<!-- Scale - upto 50 L ; >50 & <100 - M; > 100 H 
+																		 Value - Numeric state will be based on threshold ; Green = 0 ; <100 Orange; > 100 Red 
+																		 indicator > if previous is < current ; up arrow; if previous > current value down row;
+																		 -->
+																		<NumericContent scale="L" value="196" valueColor="Error" indicator="Up" withMargin="false" />
+																		</HBox>
+<HBox>
+<List id= "row1tile3list" class="sapUiTinyMarginBottom" >
+<items>
+	<StandardListItem id="row1tile3sys" title="System Errors" 	type="Active" 
+			icon="sap-icon://message-error"		
+		press="onOpenSystemDialog"
+ 		info="30"
+		infoState="Error"  />
+		<StandardListItem id="row1tile3app" title="App Errors" 	type="Active" 
+			icon="sap-icon://desktop-mobile"		
+		press="onOpenAppDialog"
+ 		info="20"
+		infoState="Error"  />
+		<StandardListItem id="row1tile3td" title="Thread Depth" 	type="Active" 
+			icon="sap-icon://synchronize"		
+		press="onOpenThreadDialog"
+ 		info="10"
+		infoState="Error"  />
+</items>
+</List>
+
+</HBox>
+
+
+																				<HBox>
+																		<Label class="sapUiTinyMarginEnd" text="{i18n>lblLastUpdate}"></Label>
+																		
+																		<Text text="04/04/2023 10 AM"></Text>
+																				</HBox>
 																		<HBox>
 																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
 																				text="Queue Depth"></Text>
@@ -228,9 +346,49 @@ maxContainerCols="1" title="SF" editable="false"	layout="ResponsiveLayout">
 <!-- <Text text="tile 4 |"></Text> -->
 
 
-<f:SimpleForm id="aribatile" class="equalColumns1"
+<f:SimpleForm id="aribatile" class="equalColumns4"
 maxContainerCols="1" title="Ariba" editable="false"	layout="ResponsiveLayout">
      <VBox id="aribacontainer">
+	 <HBox>
+
+																		<Label class="sapUiTinyMarginEnd sapUiSmallMarginTop sapUiTinyMarginTop" text="{i18n>lblQueueDepth}"></Label>
+																		
+																		<!-- <Text text="100"></Text> --> 
+																		<!-- Scale - upto 50 L ; >50 & <100 - M; > 100 H 
+																		 Value - Numeric state will be based on threshold ; Green = 0 ; <100 Orange; > 100 Red 
+																		 indicator > if previous is < current ; up arrow; if previous > current value down row;
+																		 -->
+																		<NumericContent scale="L" value="196" valueColor="Error" indicator="Up" withMargin="false" />
+																		</HBox>
+<HBox>
+<List id= "row1tile4list" class="sapUiTinyMarginBottom" >
+<items>
+	<StandardListItem id="row1tile4sys" title="System Errors" 	type="Active" 
+			icon="sap-icon://message-error"		
+		press="onOpenSystemDialog"
+ 		info="30"
+		infoState="Error"  />
+		<StandardListItem id="row1tile4app" title="App Errors" 	type="Active" 
+			icon="sap-icon://desktop-mobile"		
+		press="onOpenAppDialog"
+ 		info="20"
+		infoState="Error"  />
+		<StandardListItem id="row1tile4td" title="Thread Depth" 	type="Active" 
+			icon="sap-icon://synchronize"		
+		press="onOpenThreadDialog"
+ 		info="10"
+		infoState="Error"  />
+</items>
+</List>
+
+</HBox>
+
+
+																				<HBox>
+																		<Label class="sapUiTinyMarginEnd" text="{i18n>lblLastUpdate}"></Label>
+																		
+																		<Text text="04/04/2023 10 AM"></Text>
+																				</HBox>
 
 																		<HBox>
 																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
@@ -283,7 +441,7 @@ maxContainerCols="1" title="Ariba" editable="false"	layout="ResponsiveLayout">
 
 <!-- <Text text="tile 1 |"></Text>  -->
 
-<f:SimpleForm id="plmtile" class="equalColumns1"
+<f:SimpleForm id="plmtile" class="equalColumns4"
 maxContainerCols="1" title="PLM" editable="false"	layout="ResponsiveLayout">
      <VBox id="plmcontainer">
 
@@ -333,7 +491,7 @@ maxContainerCols="1" title="PLM" editable="false"	layout="ResponsiveLayout">
 <HBox > 
 <!-- <Text text="tile 2 |"></Text>  -->
 
-<f:SimpleForm id="tile1row2" class="equalColumns1"
+<f:SimpleForm id="tile1row2" class="equalColumns3"
 maxContainerCols="1" title="Europe" editable="false"	layout="ResponsiveLayout">
      <VBox id="tile1row2container">
 
@@ -384,7 +542,7 @@ maxContainerCols="1" title="Europe" editable="false"	layout="ResponsiveLayout">
 <!-- <Text text="tile 3 |"></Text>  -->
 
 
-<f:SimpleForm id="tile2row2" class="equalColumns1"
+<f:SimpleForm id="tile2row2" class="equalColumns2"
 maxContainerCols="1" title="APAC" editable="false"	layout="ResponsiveLayout">
      <VBox id="tile2row2container">
 
@@ -539,7 +697,7 @@ maxContainerCols="1" title="BW" editable="false"	layout="ResponsiveLayout">
 
 <!-- <Text text="tile 2 |"></Text> -->
 
-<f:SimpleForm id="tile2row3" class="equalColumns1"
+<f:SimpleForm id="tile2row3" class="equalColumns2"
 maxContainerCols="1" title="LA region" editable="false"	layout="ResponsiveLayout">
      <VBox id="tile2row3container">
 
@@ -589,7 +747,7 @@ maxContainerCols="1" title="LA region" editable="false"	layout="ResponsiveLayout
 
  <!-- <Text text="tile 3 |"></Text> -->
 
-<f:SimpleForm id="tile3row3" class="equalColumns1"
+<f:SimpleForm id="tile3row3" class="equalColumns3"
 maxContainerCols="1" title="Japan" editable="false"	layout="ResponsiveLayout">
      <VBox id="tile3row3container">
 
@@ -639,7 +797,7 @@ maxContainerCols="1" title="Japan" editable="false"	layout="ResponsiveLayout">
 
  <!-- <Text text="tile 4 |"></Text> -->
 
-<f:SimpleForm id="tile4row3" class="equalColumns1"
+<f:SimpleForm id="tile4row3" class="equalColumns4"
 maxContainerCols="1" title="Concur" editable="false"	layout="ResponsiveLayout">
      <VBox id="tile4row3container">
 
