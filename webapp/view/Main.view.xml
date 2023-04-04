@@ -46,6 +46,7 @@
                         showSecondaryValues="true"
                         width="100%"
                         wrapItemsText="false"
+						liveChange="onQuarterChange"
 						>
                 <core:Item key="Q1" text=" Quater 1" />
                     <core:Item key="Q2" text="Quarter 2" />
@@ -118,8 +119,10 @@ maxContainerCols="1" title="CRM" editable="false"	layout="ResponsiveLayout">
 
 																				<HBox>
 																		<Label class="sapUiTinyMarginEnd" text="{i18n>lblLastUpdate}"></Label>
-																		
-																		<Text text="04/04/2023 10 AM"></Text>
+																		<Text text="04/04/2023"></Text>
+																		<!-- <Text text="{path: 'Date',formatter:'.formatter.onUpdateDate'}
+																
+																		"></Text> -->
 																				</HBox>
 																<HBox>
 																			<!-- <Text class="sapUiMediumMarginTop sapUiSmallMarginBegin"
